@@ -1,0 +1,111 @@
+<!-- 
+ 
+Practice questions
+
+Q1   For the given string:
+    "     Hi Chaudhary     "
+    trim it and convert it to uppercase. 
+
+Q2   for the string "IIT Madras" precict the output for following:
+        name.slice(4,9)
+        name.indexOf("Ma")
+        name.replace("Madras", "Delhi")
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision of part B</title>
+</head>
+<body>
+    Practice questions of part B. <br>
+
+Q1   For the given string: <br>
+    "     Hi Chaudhary     " <br>
+    trim it and convert it to uppercase. <br>
+<br>
+Q2   for the string "IIT Madras" precict the output for following: <br>
+        name.slice(4,9)   <br>
+        name.indexOf("Ma")  <br>
+        name.replace("Madras", "Delhi")  <br>
+
+    <div>
+        <h2>Array (Data structure)</h2>
+        <P> let students = "saras", "chandu", "Popu", "Gagan", "Mintu"</P>
+        <pre>
+            let info = ["Nirwair", 332, 6.3];
+            (3) ['Nirwair', 332, 6.3]
+                0: "Nirwair"   1: 332    2: 6.3     length: 3
+            
+        Arrays are Mutable:  can modify within particular array;
+             > students[2]= "popat"
+             > students[2]
+             <  'popat'
+            • > students[11] = "Monu"
+             > students
+             < (12) ['saras', 'chandu', 'popat', 'Gagan', 'Mintu', empty × 6, 'Monu']
+                0: "saras"
+                1: "chandu"
+                2: "popat"
+                3: "Gagan"
+                4: "Mintu"
+                11: "Monu"
+                length: 12
+        Array Methods
+            1. Push : add to end
+            2. Pop : delete from end & returns if
+            3. Unshift : add to start
+            4. Shift : delete form start & returns if
+    
+        </pre>
+        <pre>
+            let name = "     Hi Chaudhary     ";
+let newName= name.trim().toUpperCase()
+console.log(newName);
+
+let Insti = "IIT Madras";
+console.log(Insti.slice(4,9));
+console.log(Insti.indexOf("Ma"));
+
+
+let oldWord = "Madras";
+let newWord = "Delhi";
+if (Insti.includes(oldWord)){
+    console.log(Insti.replace(oldWord, newWord));
+}
+else{
+    console.warn("Incorrect replacer");
+    
+}
+
+// Array
+let students = ["saras", "chandu", "Popu", "Gagan", "Mintu"];
+console.log(students[3][3])
+console.log(students.length)
+let info = ["Nirwair", 332, 6.3];
+
+
+let cars = ["BMW", "Mercedes", "Tesla", "Audi"];
+
+
+// // Practice Qs
+// Qs. For the given start state of an array, change it to final form using
+// start: ['january', 'july', 'march', 'august']
+// final: ['july', 'june', 'march', 'august']
+
+let month = ["january", "july", "march", "august"];
+month.shift()
+month.shift()
+month.unshift("june")
+month.unshift("july")
+console.log(month)
+        </pre>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
