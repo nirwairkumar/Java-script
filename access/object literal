@@ -1,1 +1,17 @@
-
+let items= {
+    cloth:{
+        price: 432,
+        brand: "zara",
+        color: ["red", "white", "black"]
+    },
+    toys: {
+        price: 354,
+        types: "cars",
+        size: "small"
+    },
+    grocery: {
+        price: 20,
+        name: "potato",
+        type: "organic",
+    }   
+}
