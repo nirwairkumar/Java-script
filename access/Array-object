@@ -1,0 +1,20 @@
+const details = [
+    {
+        name: "Nirwair",
+        age: 21,
+        address: "chennai",
+        remark: "BMW"
+    },
+    {
+        name: "Raghaw",
+        age: 32,
+        address: "delhi"
+
+    },
+    {
+        name: "Ramu",
+        age: 43,
+        address: "pune",
+        gender: "male"
+    }
+]
