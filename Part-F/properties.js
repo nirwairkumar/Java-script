@@ -1,5 +1,0 @@
-let para = document.querySelector("p")
-console.dir(para)
-console.dir(para.innerText)
-console.dir(para.innerHTML)
-console.dir(para.textContent)
